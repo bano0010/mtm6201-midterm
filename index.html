@@ -1,11 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm Project</title>
+  <!-- I used Google Fonts for typography and its the requirement of assignment -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- link the css file -->
+  <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+  <!-- Skip link for accessibility helps screen reader users jump directly to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER-->
+  <!-- contains logo and navigation menu -->
+  <header>
+    <div class="header-container">
+      <!-- Logo location -->
+      <div class="logo-area">
+        <img src="images/my-coffee-shop-logo.svg" alt="My Coffee House logo">
+      </div>
+
+      <!-- Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">MENU</a></li>
+          <li><a href="#">LOCATIONS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <!-- main banner with headline, text and CTA button -->
+    <section class="hero" role="banner">
+      <div class="hero-content">
+        <h1>EXPERIENCE COFFEE LIKE NEVER BEFORE</h1>
+
+        <p>
+          We craft more than beverages; we curate memories, one flavorful moment at a time.
+          Embrace the aroma and let every visit be a chapter in your coffee story.
+        </p>
+
+        <a href="#" class="btn">EXPLORE OUR MENU</a>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <!-- shows coffee images in grid layout -->
+    <section class="gallery">
+      <div class="wrapper">
+
+        <p class="section-label">WELCOME TO MY COFFEE HOUSE</p>
+        <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
+
+        <div class="gallery-grid">
+          <img src="images/latte.jpeg" alt="Latte art being poured">
+          <img src="images/coffee-beans.jpeg" alt="Coffee beans">
+          <img src="images/pouring-coffee.jpeg" alt="Pouring coffee">
+          <img src="images/three-cups.jpeg" alt="Three cups of coffee">
+          <img src="images/smiling-employee.jpeg" alt="Barista smiling">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OFFER SECTION -->
+    <!-- Explanis key benefits(three column with icons) -->
+    <section class="offer">
+      <div class="wrapper">
+        <p class="section-label">WHAT WE OFFER</p>
+        <h2>WHY VISIT US?</h2>
+
+        <div class="offer-grid">
+
+          <!-- Item 1 -->
+          <div>
+            <img src="images/fair-trade.svg" alt="Fair trade icon">
+            <h3>FAIR TRADE COFFEE</h3>
+            <p>
+              We build direct relationships with the farmers and producers who help in the development
+              of delicious, sustainable and organic coffee.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div>
+            <img src="images/local-baked-goods.svg" alt="Local baked goods icon">
+            <h3>LOCAL BAKED GOODS</h3>
+            <p>
+              We use local products to bake our goods and bring in a variety of treats from local bakers
+              within our community.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div>
+            <img src="images/made-with-love.svg" alt="Made with love icon">
+            <h3>MADE WITH LOVE</h3>
+            <p>
+              We value our customers and make it our priority to serve everyone with respect and a friendly
+              smile to start their day off right.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <!-- Call to action for menu and locations -->
+    <section class="cta-section">
+      <div class="cta-grid">
+
+        <!-- LEFT SIDE -->
+        <div class="cta-left">
+          <p class="cta-label">OUR MENU</p>
+          <h2>EXPLORE WHAT WE HAVE<br>TO OFFER YOU</h2>
+          <a href="#" class="btn-light">EXPLORE OUR MENU</a>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="cta-right">
+          <p class="cta-label">LOCATIONS</p>
+          <h2>FIND YOUR NEAREST<br>COFFEE SHOP</h2>
+          <a href="#" class="btn-outline">VIEW LOCATIONS</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <!-- Story of the coffee shop -->
+    <section class="about-section">
+      <div class="wrapper about-grid">
+
+        <!-- Image -->
+        <div class="about-image">
+          <img src="images/about-us.jpeg" alt="Barista making coffee">
+        </div>
+
+        <!-- Text -->
+        <div class="about-content">
+          <p class="section-label">ABOUT US</p>
+          <h2>READ OUR STORY</h2>
+
+          <p>
+            In the heart of our community, My Coffee House emerged as a humble local coffee shop
+            that sought to redefine the coffee experience. Founded with a passion for quality brews
+            and a commitment to fostering genuine connections, we embarked on this journey with a
+            vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.
+          </p>
+
+          <p>
+            My Coffee House quickly became a cherished gathering spot, where the rich aroma of
+            freshly ground coffee beans mingled with the laughter of friends and the tapping of
+            keyboards from those seeking a cozy workspace.
+          </p>
+
+          <a href="#" class="btn">LEARN MORE</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <!-- Customer reviews with image overlay text -->
+    <section class="testimonials">
+      <div class="wrapper">
+        <p class="small-title">TESTIMONIALS</p>
+        <h2>WHAT OUR CUSTOMERS SAY ABOUT US</h2>
+
+        <div class="testimonial-grid">
+
+          <article>
+            <h3>Jane D.</h3>
+            <img src="images/testimonial-1.jpeg" alt="Customer Jane">
+            <p>
+              "I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."
+            </p>
+            <p class="name">JANE D., TORONTO</p>
+          </article>
+
+          <article>
+            <h3>Scott S.</h3>
+            <img src="images/testimonial-2.jpeg" alt="Customer Scott">
+            <p>
+              "Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."
+            </p>
+            <p class="name">SCOTT S., OTTAWA</p>
+          </article>
+
+          <article>
+            <h3>Susie F.</h3>
+            <img src="images/testimonial-3.jpeg" alt="Customer Susie">
+            <p>
+              "Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."
+            </p>
+            <p class="name">SUSIE F., OTTAWA</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER-->
+  <!-- Bottom copyright section -->
+  <footer>
+    <div class="wrapper">
+
+      <!-- Decorative line -->
+      <div class="footer-line"></div>
+
+      <p>© My Coffee Company 2024</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>

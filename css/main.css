@@ -1,0 +1,810 @@
+/* RESET */
+/* Remove default spacing so layout is consistent across browsers */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE STYLING */
+/* Here I set the background, font and general settings of the text */
+body {
+  background: #f3f0e9;
+  font-family: 'Karla', sans-serif;
+  line-height: 1.6;
+  color: #000;
+}
+
+/* TYPOGRAPHY */
+/* Headings and navigation use the Lato font */
+
+h1,
+h2,
+h3,
+nav {
+  font-family: 'Lato', sans-serif;
+}
+
+/* WRAPPER */
+/* Wrapper keeps the layput to be center and controls max width */
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* ACCESSIBILITY */
+/* Skip link improves accessibility for keyboard users */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+}
+
+/* HEADER */
+/* Top navigation bar with logo and menu */
+
+header {
+  background: #000;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 15px 0;
+}
+
+.nav-list {
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.logo-area {
+  justify-content: center;
+  width: 100%;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area img {
+  height: 20px;
+}
+
+/* Navigation layout */
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+/* HERO SECTION */
+/* Main banner with background image and centered text */
+
+.hero {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("../images/hero-background.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 450px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: white;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* HERO TITLE */
+
+.hero h1 {
+  font-size: 2.027rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* HERO PARAGRAPH */
+
+.hero p {
+  font-size: 1rem;
+  max-width: 300px;
+  margin: 15px auto 25px;
+  text-align: center;
+}
+
+/* Hero animation */
+
+.hero-content {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* BUTTON STYLING */
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #d69e3d;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-fill {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #000;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+/* Hero button should be white */
+
+.hero .btn {
+  background: #fff;
+  color: #000;
+}
+
+/* Hover state required in rubric */
+
+.btn:hover {
+  background: #966f2c;
+}
+
+/* Focus state improves accessibility */
+
+.btn:focus {
+  outline: 2px solid #000;
+}
+
+.btn-light:hover {
+  background: #d69e3d; /* gold */
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* GALLERY SECTION */
+/* image grid layout for coffee images */
+
+.gallery {
+  padding-top: 60px;
+}
+
+.gallery .wrapper {
+  text-align: left;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery .section-label {
+  color: #d69e3d;
+  font-size: 0.85rem;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.gallery h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.802rem;
+  
+}
+
+/* MOBILE (BASE) */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.gallery-grid img:first-child {
+  grid-column: 1 / -1;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* big image */
+
+.gallery-grid img:first-child {
+  grid-row: span 2;
+}
+
+.gallery .wrapper {
+  text-align: left;
+}
+
+/* OFFER SECTION */
+
+.offer {
+  text-align: center;
+  padding: 40px 20px 60px;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.offer-grid div {
+  text-align: center;
+}
+
+.offer-grid img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.offer-grid h3 {
+  font-size: 1.1rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.offer-grid p {
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 0.8rem;
+}
+
+.offer .section-label {
+  color: #d69e3d;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+/* CTA SECTION */
+
+.cta-section {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("../images/coffee-shop.jpeg");
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 450px;
+
+  display: flex;
+  align-items: center;
+
+  color: white;
+  padding: 0 20px;
+}
+
+/* two column layout */
+
+.cta-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  place-items: center;
+}
+
+/* vertical centering */
+
+.cta-left,
+.cta-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta-left,
+.cta-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* gold labels */
+
+.cta-label {
+  color: #d69e3d;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* heading */
+
+.cta-section h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 50px;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* white button */
+
+.btn-light {
+  background: #fff;
+  color: #000;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* outline button */
+
+.btn-outline {
+  border: 2px solid #fff;
+  padding: 12px 24px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* hover effect */
+
+.btn-outline:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  background: #f2eee9;
+  padding: 100px 20px;
+}
+
+/* IMAGE FIRST ON MOBILE */
+.about-image {
+  order: 1;
+}
+
+.about-content {
+  order: 2;
+}
+
+/* IMAGE */
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CONTENT */
+
+.about-content {
+  max-width: 410px;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #d69e3d;
+  margin-bottom: 5px;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.about-content p {
+  margin-bottom: 5px;
+  line-height: 1.6;
+  font-size: 12px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+  background: #000;
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.testimonials .wrapper {
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+/* small title */
+
+.small-title {
+  color: #d69e3d;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* main heading */
+
+.testimonials h2 {
+  max-width: 650px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+/* grid layout */
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* card */
+
+.testimonial-grid article {
+  position: relative;
+}
+
+/* images */
+
+.testimonial-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(60%);
+}
+
+/* customer name above image */
+
+.testimonial-grid h3 {
+  display: none;
+}
+
+/* quote overlay */
+
+.testimonial-grid article p:first-of-type {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  right: 20px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  min-height: 90px;
+}
+
+/* city */
+
+.name {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #d69e3d;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* FOOTER */
+
+footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: -2px;
+}
+
+.footer-line {
+  height: 1px;
+  background: #333;
+  margin-bottom: 20px;
+}
+
+/* TABLET LAYOUT */
+
+@media (min-width:768px) and (max-width:1099px){
+
+  /* HEADER */
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .nav-list {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* GALLERY */
+  .gallery-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 12px;
+  }
+
+  /* BIG IMAGE */
+  .gallery-grid img:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .offer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+  }
+
+  .offer-grid div {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .offer-grid div:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 300px;
+  }
+
+  /* CTA */
+  .cta-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ABOUT */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+  }
+
+  /* IMAGE FIX */
+  .about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* TEXT FIX */
+  .about-content {
+    max-width: 100%;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .testimonial-grid img {
+    height: 350px;
+}
+
+  /* TYPOGRAPHY SCALE */
+  h1 {
+    font-size: 2.986rem;
+  }
+
+  h2 {
+    font-size: 2.488rem;
+  }
+
+  h3 {
+    font-size: 1.728rem;
+  }
+
+}
+
+/* DESKTOP LAYOUT  */
+
+@media (min-width:1100px) {
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-container {
+    max-width: 800px;   
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+
+ .logo-area {
+    justify-content: flex-start;
+    width: auto;
+  }
+  /* HERO */
+  .hero {
+    min-height: 700px;
+    padding: 120px 20px;
+  }
+
+  /* HERO TEXT */
+  .hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 3.815rem;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    max-width: 600px;
+    margin: 0 auto 35px auto;
+    font-size: 1rem;
+  }
+
+  .gallery h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3.052rem;
+    font-weight: 700;
+    color: #333;
+    max-width: 650px;
+    margin-bottom: 30px;
+    line-height: 1.15;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 220px 220px;
+    gap: 12px;
+    margin-top: 2rem;
+  }
+
+  .gallery-grid img:first-child {
+    grid-column: auto;
+    grid-row: span 2;
+  }
+
+  /* OFFER */
+  .offer-grid {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .offer-grid div {
+    grid-column: auto;
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+  }
+
+  /* TESTIMONIAL */
+  .testimonial-grid {
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+  }
+
+  .testimonials .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  /* CTA (FIXED CLASS NAME) */
+  .cta-grid {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+
+  /* TYPOGRAPHY SCALE */
+  h2 {
+    font-size: 3.052rem;
+  }
+
+  h3 {
+    font-size: 1.953rem;
+  }
+
+}
